@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/styles.css">
+
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="navbar" >
+  <a href="index.html">Projects</a>
+  <a href="doc/resume.pdf">Resume</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2 style="text-align:center;">Doğan Şahin</h2>
+    <img class="profile-image" src="img/me.jpg" />
+    <p style="text-align:center;">Istanbul, Turkey<br><br>dogansahinemail@gmail.com<br><br><a href="https://www.linkedin.com/in/dogan-sahin"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;<a href="https://github.com/DoganSahin-git"><i class="fa fa-github"></i></a></p>
+
+    <p style="text-align:justify;"> Here on this project tracking page, I am logging my notes on data analysis applications that I have developed in order to test novelties for public use. Please feel free to benefit from the scripts and setups, and give feedback about new ideas and projects.
+</p>
+
+  </div>
+  <div class="main">
+    <div class="card">
+    <h2>Python Flask application with Sqlite database to analyse cost and revenue data as a support system for pricing</h2>
+    <h5>continuous release #descriptive #diagnostic</h5>
+    <p>This showcase of application is done to test how python flask framework works with sqlite database in a business application context. Each button is set to direct to related subpage for data entry and calculations. Calculations are done accordingly:
+    <p>
+    <table>
+      <th align="left">Variable</th>
+      <th align="left">Formulation</th>
+    <tr>
+      <td>Revenue alignment</td>
+      <td>Pearson r correlation</td>
+    </tr>
+    <tr>
+      <td>Gross Margin</td>
+      <td>Gross Margin = 1 - (Cost / Revenue)</td>
+    </tr>
+    <tr>
+      <td>Gross Profit</td>
+      <td>Gross Profit = Revenue x Gross Margin</td>
+    </tr>
+    <tr>
+      <td>Mark Up</td>
+      <td>Mark Up = (Gross Profit / Cost) * 100</td>
+    </tr>
+    <tr>
+      <td>Markup Stability</td>
+      <td>Inverse of ADFuller test</td>
+    </tr>
+    </table>
+    </p>
+    <p>An example set of data is provided as default setting inside the sqlite file to show example analysis. In this example analysis, to gain insight sampling is used. That is why, six years of sampling is done with different business divisions to analyse cost and revenue.</p>
+    <br>
+    <img src="img/Screenshot_20250713_1.jpg" />
+    <br>
+    <br>
+    <p>Chart.js worked well to present linecharts or multiline charts. Although the chart types were few, they were practical. Code optimisation isn't done on purpose, so that each route part can be just copiable.</p>
+    <br>
+    <img src="img/Screenshot_20250713_2.jpg" />
+    </div>
+    <br>
+    <div class="card">
+    <h2>Python Flask application that calculates stationaryness in fragments for stat arb</h2>
+    <h5>continuous release #descriptive #diagnostic</h5>
+    <p>Fixedness in time series data is sought after for various reasons. However taking one time series data as a whole and applying one formulation as a measure could be misleading in longer terms. I have created a linear regression adaptation test, to detect parts of serial data is stationary or not. This detection is done by taking all combinations of data with all the starting points, calculating correlation of parts to it's own linear stripe. Then placing the absolute correlation results to the original serial data.</p>
+    <p>With the help of this methodology, a more detailed analysis will be attempted by dividing time series into portions and detecting the most steady parts in a time series data. This algorithm is specially useful in longer series where underlying structural changes are inevitable. Therefore, an overall look at stationaryness is more reliable.</p>
+    <p>On the web interface, which is created with python flask, financial time series data is uploadable as excel file format to calculate stationaryness in fragments. You could download the app and test with sample data to evaluate. You could also test the app with your own data with applicable for in different periods of time series data. Please refer to end of github readme.md to change parameters and test.</p>
+    <br>
+    <img src="img/Screenshot_20250801_1.jpg" />
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+
+</body>
+</html>
